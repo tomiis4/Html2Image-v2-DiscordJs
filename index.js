@@ -8,10 +8,9 @@ const client = new Client({
     ]
 })
 
-const config = require("./config.json");
-const clientId = config.clientID;
+const clientId = process.env.ID;
 const guildId = '941415311519916033';
-const rest = new REST({ version: '10' }).setToken(config.token);
+const rest = new REST({ version: '10' }).setToken(process.env.TOKEN);
 const randomColor = Math.floor(Math.random()*16777215).toString(16);
 const Buffer = require('buffer').Buffer;
 
@@ -132,4 +131,4 @@ client.on('interactionCreate', async interaction => {
 });
 
 
-client.login(config.token);
+client.login(process.env.TOKEN);
