@@ -92,7 +92,7 @@ client.on('interactionCreate', async interaction => {
                 "html": htmlInteraction.value,
                 "css": cssInteraction.value
             }
-            axios.post('http://localhost:3000/api', dataSend) // get data from API
+            axios.post('https://html2image-v2-api.herokuapp.com//api', dataSend) // get data from API
                 .then((res) => {
                     const image64 = Buffer.from(res.data, 'base64');
                     const image64Attachment = new AttachmentBuilder(image64, { name: "CodeResult.png"});
@@ -110,7 +110,7 @@ client.on('interactionCreate', async interaction => {
             const dataSend = {
                 "html": htmlInteraction.value
             }
-            axios.post('http://localhost:3000/api', dataSend) // get data from API
+            axios.post('https://html2image-v2-api.herokuapp.com//api', dataSend) // get data from API
                 .then((res) => {
                     const image64 = Buffer.from(res.data, 'base64');
                     const image64Attachment = new AttachmentBuilder(image64, { name: "CodeResult.png"});
