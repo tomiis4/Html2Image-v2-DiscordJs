@@ -1,5 +1,4 @@
 {
     "token": YOUR-BOT-TOKEN,
-    "clientID": YOUR-CLIENT-ID,
-    "prefix": "."
+    "clientID": YOUR-CLIENT-ID
 }
