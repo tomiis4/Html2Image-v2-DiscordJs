@@ -156,7 +156,11 @@ client.on('interactionCreate', async interaction => {
         } 
         // if learn css
         else if (optionsInteraction  == "Learn CSS") {
-            interaction.reply("Comming soon.")
+            const cssEmbed = new EmbedBuilder() // create embed
+                .setTitle("Comming soon :eyes:")
+                .setTimestamp()
+                .setColor("#1259fe")
+            interaction.reply({ embeds: [cssEmbed] })
         }        
         // wrong answer  (never happend)
         else { 
@@ -175,7 +179,6 @@ client.on("interactionCreate", interaction =>{
                     .setDescription("• HTML stand for *Hyper Text Markup Language*\n• Describes the structure of a Web page.\n• Most used version is HTML5")
                     .setTimestamp()
                     .setColor("#e85417")
-                    .setImage('https://i.imgur.com/AfFp7pu.png')
                 interaction.reply({ embeds: [htmlEmbed] })
                 break;
         }
