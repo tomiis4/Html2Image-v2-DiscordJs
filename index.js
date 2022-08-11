@@ -17,7 +17,7 @@ const Buffer = require('buffer').Buffer;
 client.on("ready", () => {
     console.log(`[DISCORD] ${client.user.username} has been online`);
 })
-
+ 
 const commands = [
     {
         name: 'run',
