@@ -17,3 +17,5 @@ and then
 ```bash
 npm run start
 ```
+# Advice
+This API is using Puppeteer so if you want put it on hosting, you have to search how to host it.
