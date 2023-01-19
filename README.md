@@ -1,21 +1,18 @@
 # Html2Image-v2-DiscordJs
-A Discord bot that will compile your html &amp; css in to the image.
+## A Discord bot that will compile your html &amp; css in to the image.
 
-# Installing
-## Install
-First of all you have to dowload source code
-```bash
-gh repo clone tomiis4/Html2Image-v2-DiscordJs
+## Installing
+To download source code, you can you git using
+```
+git clone https://github.com/tomiis4/Html2Image-v2-DiscordJs.git
 ```
 
-## Run
-To run this bot, you have to run this command
-```bash
-npm install
+## Start
+To start this bot, you have to put your bot informations in `config.json`
+After that you can install `node_modules` and start the bot
 ```
-and then
-```bash
-npm run start
+npm install & npm run start
 ```
-# Advice
-This API is using Puppeteer so if you want put it on hosting, you have to search how to host Puppeteer.
+
+# Note
+This API use Puppeteer, which need headless server to screenshot page. (This may cause errors on server)
